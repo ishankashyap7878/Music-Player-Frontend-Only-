@@ -1,0 +1,635 @@
+body{
+	margin:0px;
+	background: #0c1027;
+}
+
+header{
+	margin-top:20px;
+	border-bottom: 1px solid #1f243e;
+	margin-bottom: 55px;
+}
+/*logo of the studio*/
+.icon{/*logo of the studio*/
+	margin:10px;
+	margin-left:60px;
+	color: chartreuse;
+    font-size: -webkit-xxx-large;
+}
+/*favoutites div*/
+#favourites{
+	top:40px;
+	color:antiquewhite;
+	font-size: large;
+	display:inline-block; 
+	margin-left:120px;
+}
+#favourites>p{
+	margin:0px;
+	position: relative;
+    top: -13px;
+    left: 50px;
+}
+/*search box div*/
+.search-box{
+	display:inline-block;
+	height:33px;
+	width:290px;
+	border-radius: 13px;
+    background-color: #192043;
+    position: relative;
+    top: -13px;
+    left:500px;
+}
+/*search box input */
+#search-box-input{
+	display:inline-block;
+	background-color: #192043;
+    border: none;
+    color: #3b5763;
+    margin-left: 13px;
+    margin-top: 7px;
+    outline: none;
+
+}
+#search-icon{
+	margin-left:10px; 
+	position: relative; 
+	top: 4px;
+}
+#microphone-icon{
+	margin-left: 50px;
+    position: relative;
+    top: 3px;
+}
+#bell-icon{
+	position: relative;
+    top: -6px;
+    left: 620px;
+}
+.profile-img{
+	display:inline-block;
+	height: 3rem;
+    width: 3rem;
+    position: relative;
+    top: 8px;
+    left: 710px;
+}
+.profile-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+/*main content box*/
+.main-box{ 
+	width:60%;
+	padding:10px;
+    margin:4px;
+    display:inline-flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items:center;
+    margin-left: 5%;
+}
+/*Carousel effect div*/
+#Carousel{
+	height:300px;  
+	width:100%;
+
+}
+/*animation properties*/
+@keyframes change-direction{
+	
+	25%{
+    	left: 1%;
+	}
+	50%{
+    	left: 17%;
+	}
+	75%{
+    	left: 35%;
+	}
+	100%{
+		
+	}
+}
+/*scaling div*/
+@keyframes change-shape{
+	
+	25%{
+		transform:scale(0.7);
+	}
+	50%{
+		transform:scale(0.7);
+	}
+	75%{
+		transform:scale(0.7);
+	}
+	100%{
+		
+	}
+}
+/*changing z-index*/
+@keyframes height{
+	
+	25%{
+		z-index:0;
+	}
+	50%{
+		z-index:-1;
+	}
+	75%{
+		z-index:0;
+	}
+	100%{
+		z-index:4;
+	}
+}
+/*1st image*/
+#Carousel #one{
+	display: inline-block;
+    height: 250px;
+    width: 36%;
+    position: absolute;
+    left: 18%;
+    top: 25%;
+    z-index:4;
+    animation-name: change-direction,change-shape,height ;
+    animation-duration:8s,8s,8s;
+    animation-timing-function: ease-in-out,ease-in-out,ease-in-out;
+    animation-iteration-count:infinite,infinite,infinite;
+}
+#Carousel #one img{
+	background-size: cover;
+	height:100%;
+	width:100%;
+	-webkit-filter: blur(5px);
+  	filter: blur(5px);
+}
+
+#Carousel #one div{
+	width:100%;
+	height:80%;
+	position: absolute;
+    top: 9%;
+    background-image: url(Ed-Sheeran-Widescreen.jpg);
+    background-size: cover;
+}
+/*2nd image*/
+#Carousel #two{
+	display: inline-block;
+    height: 250px;
+    width: 36%;
+    position: absolute;
+    left: 18%;
+    top: 25%;
+    z-index:3;
+    animation-name: change-direction,change-shape,height ;
+    animation-duration:8s,8s,8s;
+    animation-timing-function: ease-in-out,ease-in-out,ease-in-out;
+    animation-iteration-count:infinite,infinite,infinite;
+    animation-delay:-2s;
+}
+#Carousel #two img{
+	background-size: cover;
+	height:100%;
+	width:100%;
+	-webkit-filter: blur(5px);
+  	filter: blur(5px);
+}
+
+#Carousel #two div{
+	width:100%;
+	height:80%;
+	position: absolute;
+    top: 9%;
+    background-image: url(songs-of-the-year-2017-billboard-1500.jpg);
+    background-size: cover;
+}
+/*3rd image*/
+#Carousel #three{
+	display: inline-block;
+    height: 250px;
+    width: 36%;
+    position: absolute;
+    left: 18%;
+    top: 25%;
+    z-index:2;
+    animation-name: change-direction,change-shape,height ;
+    animation-duration:8s,8s,8s;
+    animation-timing-function: ease-in-out,ease-in-out,ease-in-out;
+    animation-iteration-count:infinite,infinite,infinite;
+   	animation-delay:-4s;
+}
+#Carousel #three img{
+	background-size: cover;
+	height:100%;
+	width:100%;
+	-webkit-filter: blur(5px);
+  	filter: blur(5px);
+}
+
+#Carousel #three div{
+	width:100%;
+	height:80%;
+	position: absolute;
+    top: 9%;
+    background-image: url(O7mZOIg.png);
+    background-size: cover;
+}
+/*4th image*/
+#Carousel #four{
+	display: inline-block;
+    height: 250px;
+    width: 36%;
+    position: absolute;
+    left: 18%;
+    top: 25%;
+    z-index:1;
+    animation-name: change-direction,change-shape,height ;
+    animation-duration:8s,8s,8s;
+    animation-timing-function: ease-in-out,ease-in-out,ease-in-out;
+    animation-iteration-count:infinite,infinite,infinite;
+    animation-delay:-6s;
+}
+#Carousel #four img{
+	background-size: cover;
+	height:100%;
+	width:100%;
+	-webkit-filter: blur(5px);
+  	filter: blur(5px);
+}
+
+#Carousel #four div{
+	width:100%;
+	height:80%;
+	position: absolute;
+    top: 9%;
+    background-image: url(Shawn-Mendes-1.jpg);
+    background-size: cover;
+}
+/*playlist section*/
+.aside-section{ 
+	width: 26%;
+    display: inline-flex;
+    flex-direction: column;
+    height: 600px;
+    position: sticky;
+    overflow: scroll;
+    top: 20px;
+    float: right;
+    border-bottom: 1px solid aqua;
+    -ms-overflow-style: none;
+    margin-right: 2%;
+}
+/*latest release section*/
+.Latest-Release{
+	/*height:200px;*/
+	margin-top:10px; 
+	width:100%;
+}
+.Latest-Release>p{
+	margin: 0px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: larger;
+}
+/*latest songs section*/
+.Latest-Songs{
+	/*height: 157px;*/
+    margin: -2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#Latest-one{
+	width: 42%;
+    height: 98px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+#Latest-one:hover {
+    /* border: brown; */
+    box-shadow: 0px 0px 3px 4px #888888;
+}
+.Latest-icon{ 
+	display:inline-block; 
+	margin: 8px 0px 0px 10px;
+	height:80px;
+	width:80px;
+	overflow: hidden;
+}
+.Latest-icon img{
+	height:100%;
+	width:100%;
+	transition: 0.4s ease-in-out;
+}
+.Latest-icon img:hover{
+	transform:scale(1.111);
+}
+.Latest-icon-name{
+	display:inline-block;
+	height:4px;
+	width:10px;
+}
+/*popular artist section*/
+.Popular-Artist{
+	/*height:200px;*/
+	margin-top: 60px;
+	width:100%;
+}
+.Popular-Artist>p{
+	margin: 0px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: larger;
+    margin-bottom: 15px;
+}
+
+.Artists{
+	margin: -2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 100%;
+}
+.Artist-icons{
+	display: inline-block;
+    height: 133px;
+    width: 133px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.Artist-icons img{
+	height:100%;
+	width:100%;
+	background-size:cover;
+	transition: 0.4s ease-in-out
+}
+.Artist-icons img:hover{
+	transform:scale(1.111);
+}
+/*Genre section*/
+.Genre{
+	margin: -2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 108px;
+    background-color: #101642;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.Genre-icons{
+	display:inline-block;
+	height:100px;
+	width:100px;
+	overflow:hidden;
+	border-radius:50%;
+}
+.Genre-icons img{
+	height:100%;
+	width:100%;
+	background-size:cover;
+	transition: 0.4s ease-in-out
+}
+.Genre-icons img:hover{
+	transform:scale(1.111);
+}
+
+.Genre-icons-square img{
+	height:100%;
+	width:100%;
+	background-size:cover;
+}
+
+.Type{
+	margin: -2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.sq-icon{
+	display: inline-block;
+    height: 151px;
+    width: 295px;
+    overflow: hidden;
+}
+.sq-icon img{
+	max-width: 124%;
+	opacity: 39%;
+    max-height: fit-content;
+    transition: 0.4s ease-in-out;
+}
+.sq-icon div{
+	height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 3px solid white;
+
+}
+.sq-icon img:hover{
+	transform:scale(1.111);
+}
+/*music player bar0*/
+.player{
+    width: 100%;
+    height: 88px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #282828;
+}
+footer{
+	height:100px;
+}
+.queuehead{
+	font-size:24px;
+	font-weight:bold; 
+	color:white;
+	position:relative;
+	margin-top:-10px;
+	margin-left:10px;
+	display:inline;
+}
+.queueside{
+	font-size: 15px;
+    color: green;
+    position: relative;
+    left: 347px;
+    top: -22px;
+    display: inline;
+}
+.queue1{
+	position: relative;
+    top: 5px;
+    left: 10px;
+    margin: 5px 0px 5px 0px;
+    width: 91%;
+}
+.queue1:hover {
+    /* border: brown; */
+    box-shadow: 0px 0px 3px 4px #888888;
+}
+.queueimg{
+	height: 70px;
+    width: 70px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.queuenum{
+	font-weight: bold;
+    color: grey;
+    margin-left: 5px;
+    position: relative;
+    top: -22px;
+}
+.queuesong{
+	font-weight: bold;
+    color: white;
+    font-size: 21px;
+    margin-left: 40px;
+    position: relative;
+    top: -39px;
+    left: -15px;
+}
+.queuesong_{
+	font-weight: bold;
+    color: grey;
+    font-size: 16px;
+    margin-left: 92px;
+    position: relative;
+    left: 27px;
+    top: -42px;
+}
+.queueicon{
+	position: relative;
+    left: 200px;
+    font-size: 18px;
+    color: grey;
+    top: -56px;
+}
+.player div{
+	position: relative;
+    top: 5px;
+    margin: 5px 0px 5px 0px;
+    width: 300px;
+    display: inline-block;
+}
+.player div img{
+	height: 70px;
+    width: 70px;
+    position: relative;
+    top: 1px;
+    left: 85px;
+}
+.player-name{
+	font-weight: bold;
+    color: white;
+    font-size: 21px;
+    margin-left: 40px;
+    position: relative;
+    top: -39px;
+    left: 51px;
+}
+
+.player-art{
+	font-weight: bold;
+    color: grey;
+    font-size: 16px;
+    margin-left: 92px;
+    position: relative;
+    left: 72px;
+    top: -42px;
+}
+.player-icon{
+	position: relative;
+    left: 137px;
+    font-size: 18px;
+    color: grey;
+    top: -56px;
+}
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 549px;
+    height: 5px;
+    position: relative;
+    top: -29px;
+    left: 79px;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  
+}
+progress[value]::-webkit-progress-value {
+  background-color:#088429;
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+.random {
+    position: relative;
+    left: 267px;
+    font-size: 18px;
+    color: grey;
+    top: -56px;
+}
+.forward {
+    position: relative;
+    left: 522px;
+    font-size: 18px;
+    color: grey;
+    top: -56px;
+}
+.backward {
+    position: relative;
+    left: 354px;
+    font-size: 18px;
+    color: grey;
+    top: -56px;
+}
+.pause {
+    position: relative;
+    left: 400px;
+    font-size: 35px;
+    color: grey;
+    top: -50px;
+}
+.volume {
+    position: relative;
+    left: 853px;
+    font-size: 18px;
+    color: grey;
+    top: -56px;
+}
+.ellipse{
+	position: relative;
+    left: 200px;
+}
+.Latest-icon-name p{
+	width:max-content;
+}
+.aside-section::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.play-hover{
+	position: relative;
+    top: -54px;
+    left: -79px;
+    font-size: xx-large;
+    color: white;
+}
